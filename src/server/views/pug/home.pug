@@ -1,0 +1,20 @@
+head
+  title=title
+  base(href='/')
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, minimum-scale=1.0, shrink-to-fit=no')
+  meta(name='mobile-web-app-capable' content='yes')
+  meta(name='apple-mobile-web-app-capable' content='yes')
+  meta(name='apple-mobile-web-app-status-bar-style' content=theme.color)
+  meta(name='description' content=meta.og.desc)
+  meta(property="og:url" content=meta.og.url)
+  meta(property="og:title" content=meta.og.title)
+  meta(property="og:description" content=meta.og.desc)
+  meta(property="og:image" content=meta.og.image)
+  link(rel="icon" type="image/png" href=meta.ico)
+  <link href="" rel="stylesheet">
+  for src in styleSheets
+    link( href=src rel='stylesheet' )
+  for src in javaScripts
+    script(src=src type="text/javascript" async)
+body
