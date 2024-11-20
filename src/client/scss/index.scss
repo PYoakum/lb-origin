@@ -1,0 +1,18 @@
+@import 'colors.scss';
+
+*:focus {
+    outline: none;
+}
+  
+ul, ol {
+    padding: 0;
+    list-style: none;
+}
+  
+html,body {
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0;
+    @import 'navbar.scss';
+    @import 'wrapper.scss';
+}

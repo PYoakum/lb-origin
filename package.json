@@ -1,16 +1,16 @@
 {
-  "name": "server",
+  "name": "simple-server",
   "version": "1.0.0",
-  "description": "server app",
+  "description": "simple server app",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "build-css": "sass src/style/main.scss dist/public/css/main.css && sass src/style/admin.scss dist/public/css/admin.css",
+    "build-css": "sass src/client/scss/index.scss dist/public/css/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
     "pack": "webpack"
   },
-  "author": "",
+  "author": "Peter Yoakum",
   "license": "UNLICENSED",
   "dependencies": {
     "body-parser": "^1.20.3",

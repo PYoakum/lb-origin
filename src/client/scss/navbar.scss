@@ -1,0 +1,72 @@
+@import 'colors.scss';
+
+#navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 10;
+    #navbar-container{
+        position: relative;
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        background-color: $axel;
+        #hero {
+            display : inline-block;
+            margin : 12px;
+        };
+        #nav-button{
+            transition: 580ms all;
+            display : inline-block;
+            margin : 12px;
+            cursor : pointer;
+            #top-bar, #mid-bar, #bottom-bar {
+                transition: 580ms all;
+            };
+        };
+    };
+    #menu-container{
+        position : relative;
+        max-width : 600px;
+        margin : 0 auto;
+        .nav-open{
+            border-left: 2px solid lighten($axel, 40%);
+            border-bottom: 2px solid lighten($axel, 40%);
+            width : 300px;
+        };
+        .nav-close{
+            border-left: 0px solid #fff;
+            border-bottom: 0px solid #fff;
+            width : 0px;
+        };
+        #nav-menu{
+            right: 0;
+            display : block;
+            display: block;
+            position: absolute;
+            height: fit-content;
+            overflow: hidden;
+            transition: 550ms all;
+            background-color: #fff;
+            a{
+                font-family: 'Staatliches', cursive;
+                font-size: 40px;
+                text-decoration: none;
+                line-height: 75px;
+                margin : 0 auto;
+                display : block;  
+                justify-content : center;
+                text-align: center;
+                color : $axel;
+                clear: both;
+                display: block;
+                border-left : 0px solid $sunflower;
+                transition: 0.3s all ease;
+                &:hover {
+                    border-left : 12px solid $sunflower;
+                };
+            };
+        };
+    };
+};

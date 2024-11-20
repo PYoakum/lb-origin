@@ -3,7 +3,7 @@ const path = require('path');
 homeContent = {
 
   // html title
-  'title' : 'Hello World',
+  'defaultTitle' : 'simple server',
   // html theme
   'theme' : {
     'color' : '#444'
@@ -14,9 +14,9 @@ homeContent = {
     'ico' : 'favicon.ico',
     // open graph
     'og' : {
-      'desc'  : 'Hello World',
+      'desc'  : 'simple server',
       'url'   : '/',
-      'title' : 'Hello World',
+      'title' : 'simple server',
       'image' : 'favicon.ico'
     }
   },
@@ -32,6 +32,8 @@ homeContent = {
 
 
 module.exports = (req, res) => {
+
+  console.log(homeContent)
 
   res.render('home.pug', homeContent)
 
